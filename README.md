@@ -1,56 +1,75 @@
-# 🧾 Mon Outil Devis – Frontend
+# Nuxt Minimal Starter
 
-Interface web en Nuxt 3 pour gérer facilement des clients et leurs devis.  
-Ce frontend utilise une API AdonisJS (backend du même projet).
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
----
+## Setup
 
-## 🚀 Stack utilisée
+Make sure to install dependencies:
 
-- Nuxt 3 – Framework frontend moderne
-- Tailwind CSS – Pour un design propre sans prise de tête
-- AdonisJS – API REST côté backend
-- SQLite – Base de données légère (via Adonis)
-
----
-
-## 📦 Installation du projet
-
-Dans le terminal, tape cette commande :
-
+```bash
+# npm
 npm install
 
----
+# pnpm
+pnpm install
 
-## ▶️ Lancer le projet en local
+# yarn
+yarn install
 
-Toujours dans le terminal :
+# bun
+bun install
+```
 
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
 npm run dev
 
-Puis ouvre ton navigateur sur :  
-http://localhost:3000
+# pnpm
+pnpm dev
 
----
+# yarn
+yarn dev
 
-## 🔗 Connexion avec l'API
+# bun
+bun run dev
+```
 
-Ton backend (AdonisJS) doit être lancé à côté :  
-http://localhost:3333
+## Production
 
----
+Build the application for production:
 
-## ✅ Fonctionnalités prévues
+```bash
+# npm
+npm run build
 
-- Afficher les clients
-- Ajouter un client
-- Ajouter / modifier / supprimer des devis
-- Authentification (à faire plus tard)
-- Export PDF (à faire plus tard)
+# pnpm
+pnpm build
 
----
+# yarn
+yarn build
 
-## 👤 Auteur
+# bun
+bun run build
+```
 
-Projet réalisé par Jean-Michel  
-GitHub : https://github.com/jmlc45120
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
