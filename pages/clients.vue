@@ -58,10 +58,15 @@ const successMessage = ref('')
 const errorMessage = ref('')
 const loading = ref(false)
 
-// Récupération des clients à l'ouverture
+// Récupération des clients au montage côté client uniquement
 onMounted(async () => {
-    const { data } = await useFetch<Client[]>('http://localhost:3333/clients')
-    if (data.value) clients.value = data.value
+    try {
+        const data = await $fetch<Client[]>('http://localhost:3333/clients')
+        clients.value = data
+    } catch (err) {
+        errorMessage.value = "Impossible de charger les clients."
+        console.error(err)
+    }
 })
 
 // Fonction pour ajouter un client
